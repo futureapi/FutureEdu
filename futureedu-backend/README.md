@@ -1,0 +1,5 @@
+Create a env file and
+
+JWT_SECRET=<JWT SECRET>
+JWT_EXPIRE=30d  
+DATABASE_URL=<DB URL>

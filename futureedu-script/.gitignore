@@ -1,0 +1,9 @@
+/node_modules
+.env
+/videos/*.mp4
+/videos/h265/*.mp4
+/videos/output/*.mp4
+/videos/s3/*.mp4
+/videos/youtube/*.mp4
+/subtitles/*.ttml
+/subtitles/*.vtt

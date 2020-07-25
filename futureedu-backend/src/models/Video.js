@@ -1,0 +1,41 @@
+const { Sequelize } = require("sequelize");
+
+module.exports = (sequelize, DataTypes) => {
+  return sequelize.define("Video", {
+    id: {
+      type: DataTypes.UUID,
+      primaryKey: true,
+      allowNull: false,
+      defaultValue: Sequelize.UUIDV4,
+    },
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    description: {
+      type: DataTypes.STRING,
+    },
+    url: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    thumbnail: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    parentid: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    language: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      defaultValue: "English",
+    },
+    language_key: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      defaultValue: "en_us",
+    },
+  });
+};
